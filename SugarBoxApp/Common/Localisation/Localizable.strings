@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SugarBoxApp
+
+  Created by Kaushal Chaudhary on 09/11/23.
+  
+*/
+"tabbar/home" = "Home";
+"tabbar/movies" = "Movies";
+"tabbar/shows" = "Shows";
