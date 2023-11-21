@@ -89,7 +89,7 @@ extension AppCollectionView {
     func showBottomLoader() {
         DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
             guard let self = self else { return }
-            if totalNumberOfItems < 1 { return }
+            if self.totalNumberOfItems < 1 { return }
             let midX: CGFloat = self.frame.width / 2
             let midY: CGFloat = max((self.contentSize.height + self.contentInset.bottom), 50)
             let height: CGFloat = 50

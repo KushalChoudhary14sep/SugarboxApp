@@ -115,7 +115,7 @@ private extension CarouselCell {
         section.orthogonalScrollingBehavior = .continuous
         section.visibleItemsInvalidationHandler = { [weak self] _, offset, _ in
             guard let self = self else { return }
-            let pageWidth = collectionView.frame.size.width * 0.9 + 16
+            let pageWidth = self.collectionView.frame.size.width * 0.9 + 16
             let currentPage = Int((offset.x + pageWidth / 2) / pageWidth)
             self.pager.currentPage = currentPage
         }
